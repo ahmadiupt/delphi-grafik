@@ -68,6 +68,15 @@ object database_latihan1: Tdatabase_latihan1
       YValues.Order = loNone
     end
   end
+  object btn2: TBitBtn
+    Left = 448
+    Top = 8
+    Width = 75
+    Height = 25
+    Caption = 'btn2'
+    TabOrder = 3
+    OnClick = btn2Click
+  end
   object con1: TADOConnection
     Connected = True
     ConnectionString = 

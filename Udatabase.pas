@@ -17,8 +17,10 @@ type
     cht1: TChart;
     Series1: TBarSeries;
     qry2: TADOQuery;
+    btn2: TBitBtn;
     procedure btn1Click(Sender: TObject);
     procedure FormShow(Sender: TObject);
+    procedure btn2Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -48,6 +50,15 @@ end;
 procedure Tdatabase_latihan1.FormShow(Sender: TObject);
 begin
 dbgrd1.Columns[0].Width:= 20;
+dbgrd1.Columns[3].Width:= 90;
+dbgrd1.Columns[4].Width:= 80;
+dbgrd1.Columns[5].Width:= 60;
+
+end;
+
+procedure Tdatabase_latihan1.btn2Click(Sender: TObject);
+begin
+  dbgrd1.Columns[0].Width:= 20;
 dbgrd1.Columns[3].Width:= 90;
 dbgrd1.Columns[4].Width:= 80;
 dbgrd1.Columns[5].Width:= 60;
